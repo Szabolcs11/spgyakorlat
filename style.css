@@ -37,6 +37,14 @@ body {
     align-items: center;
 }
 
+.header-top>a {
+    cursor: pointer;
+}
+
+.header-top>div {
+    cursor: pointer;
+}
+
 
 .download-icon-container {
     display: flex;
@@ -363,7 +371,7 @@ body {
     font-size: 32px;
     line-height: 42px;
     /* margin-left: 418px; */
-    padding-left: 418px;
+    /* padding-left: 418px; */
     /* overflow: none; */
 
     color: #FFFFFF;
@@ -373,6 +381,7 @@ body {
 .description-2-right {
     width: 50%;
     background-image: url(./aseets/victoria-shes-UC0HZdUitWY-unsplash\ copy@2x\ 1.jpg);
+    /* background-repeat: no-repeat; */
     background-size: 100%;
 }
 
@@ -381,6 +390,10 @@ body {
     margin-top: 128px;
     width: 231px;
     height: 92px;
+}
+
+.description-2-left-content-container {
+    padding-left: 418px;
 }
 
 .description-2-content {
@@ -393,7 +406,7 @@ body {
     font-size: 16px;
     line-height: 24px;
 
-    margin-left: -20px;
+    /* margin-left: -20px; */
 }
 
 .description-2-button {
@@ -449,10 +462,20 @@ body {
 }
 
 .description-3-text-content {
+    /* width: 652px;
+    height: 333px;
+    margin-top: 65px;
+    text-align: center;
+    display: block; */
+    display: flex;
+    justify-content: center;
+}
+
+.description-3-text-content-container {
     width: 652px;
     height: 333px;
     margin-top: 65px;
-    margin-left: 634px;
+    /* margin-left: 634px; */
     text-align: center;
     display: block;
 }
@@ -493,6 +516,7 @@ body {
     width: 100%;
     background-image: url("./aseets/4541cc99083f618a22b772228f8a9698@2x\ 1.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .description-4-container-right {
     width: 100%;
@@ -544,11 +568,15 @@ body {
 
 
 /* START OF Description 5 */
-/* 
+
 .description-5-container {
     height: 540px;
     width: 100%;
     background-image: url("./aseets/80457d7e9d392ee84954d90d13d15d69@2x\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    text-align: center;
 }
 
 .description-5-container-title {
@@ -557,10 +585,27 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 26px;
-    text-align: center;
+    /* text-align: center; */
     color: #FFFFFF;
+    padding-top: 193px;
 }
 
-.description-5-container-title-text {
-    margin-top: 193px;
-} */
+.description-5-container-button-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description-5-container-button {
+    background: #FFFFFF;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    width: 204px;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 52px;
+}
