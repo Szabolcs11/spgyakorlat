@@ -10,6 +10,19 @@
 </head>
 <body>
     <div class="main">
+        <div id="hamburgermenu" class="hamburgermenu">
+            <div class="hamburgermenu-container">
+                <div class="hamburgermenu-menus">Die Metzgerei</div>
+                <div class="hamburgermenu-menus">Dry Aged</div>
+                <div class="hamburgermenu-menus">Fleischversand</div>
+                <div class="hamburgermenu-menus">Events/Kurse</div>
+                <div class="hamburgermenu-menus">Partyservice</div>
+                <div class="hamburgermenu-menus">Tagesessen</div>
+                <div class="hamburgermenu-menus">Impressum</div>
+                <div class="hamburgermenu-menus">Kontakt</div>
+            </div>
+        </div>
+        
         <div class="header">
             <img src="./aseets/logo.svg" class="header-logo">
             <div class="header-top">
@@ -28,22 +41,15 @@
                 <img onclick="HamburgerMenuClick()" class="hamburger-menu-icon vanish" src="./aseets/hamburgermenu.svg" alt="">
             </div>
             <div class="header-bottom">
-                <img src="./aseets/clock.svg" style="margin-right: 5px;">
+                <img class="header-icon-clock" src="./aseets/clock.svg" style="margin-right: 5px;">
                 <a class="bold" style="margin-right: 5px;">Opentime:</a>
                 <a>   Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</a>
             </div>
         </div>
 
-        <div id="hamburgermenu" class="hamburgermenu">
-            <div class="hamburgermenu-container">
-                <div class="hamburgermenu-menus">Die Metzgerei</div>
-                <div class="hamburgermenu-menus"></div>
-                <div class="hamburgermenu-menus"></div>
-                <div class="hamburgermenu-menus"></div>
-            </div>
-        </div>
 
-        <div class="slider-container">
+
+        <div class="slider-container" id="slider-container">
             <div class="slide-container-main">
                 <div class="slider-container-textbox">
                     <div class="slider-container-textbox-text-1">
@@ -57,13 +63,13 @@
 
             <div class="slider-content-navigation">
                 <div class="navigation-container">
-                    <img src="./aseets/arrow-left.svg" class="navigation-left-arrow" style="cursor: pointer;">
-                    <div class="slider-container-navigation-elipse navigation-1 navigation-active"></div>
-                    <div class="slider-container-navigation-elipse navigation-2"></div>
-                    <div class="slider-container-navigation-elipse navigation-3"></div>
-                    <div class="slider-container-navigation-elipse navigation-4"></div>
-                    <div class="slider-container-navigation-elipse navigation-5"></div>
-                    <img src="./aseets/arrow-right.svg" class="navigation-right-arrow" style="cursor: pointer;">
+                    <img src="./aseets/arrow-left.svg" onclick="NavigateLeft()" class="navigation-left-arrow" style="cursor: pointer;">
+                    <div id="elipse-1" class="slider-container-navigation-elipse navigation-1 navigation-active" onclick="GoTo(0, this)"></div>
+                    <div id="elipse-2" class="slider-container-navigation-elipse navigation-2" onclick="GoTo(1, this)"></div>
+                    <div id="elipse-3" class="slider-container-navigation-elipse navigation-3" onclick="GoTo(2, this)"></div>
+                    <div id="elipse-4" class="slider-container-navigation-elipse navigation-4" onclick="GoTo(3, this)"></div>
+                    <div id="elipse-5" class="slider-container-navigation-elipse navigation-5" onclick="GoTo(4, this)"></div>
+                    <img src="./aseets/arrow-right.svg" onclick="NavigateRight()" class="navigation-right-arrow" style="cursor: pointer;">
                 </div>
             </div>
         </div>
@@ -81,15 +87,15 @@
             </div>
         </div>
 
+
+
+        
         <div class="description-1-container">
             <div class="description-1-left">
                 <div class="description-1-left-container">
                     <div class="description-1-left-container-top">
                         <div class="description-1-title">Dry Aged</div>
                         <div class="description-1-subtitle">Alte Wutz, Dry Aged</div>
-
-                        <!-- <a class="description-1-title">Dry Aged</a>
-                        <a class="description-1-subtitle">Alte Wutz, Dry Aged</a> -->
                     </div>
                     <div class="description-1-left-container-middle">
                         <a class="description-1-content">Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.
@@ -136,7 +142,6 @@
             </div>
             
             <div class="description-2-right">
-                <!-- <img src="./aseets/victoria-shes-UC0HZdUitWY-unsplash copy@2x 1.jpg" alt=""> -->
             </div>
         </div>
 
@@ -160,20 +165,20 @@
                     </div>
                 </div>
             </div>
-            <img src="./aseets/desc3-line.svg" alt="">
+            <img class="separator-line" src="./aseets/desc3-line.svg" alt="">
 
             <div class="description-3-foods">
                 <div class="description-3-food-image">
-                    <img src="./aseets/Group 661@2x.png" alt="">
+                    <img src="./aseets/Group 661@2x.png" alt=""  style="width: 100%; height: 100%;">
                 </div>
                 <div class="description-3-food-image">
-                    <img src="./aseets/Group 660@2x.png" alt="">
+                    <img src="./aseets/Group 660@2x.png" alt="" style="width: 100%; height: 100%;">
                 </div>
                 <div class="description-3-food-image">
-                    <img src="./aseets/Group 659@2x.png" alt="">
+                    <img src="./aseets/Group 659@2x.png" alt="" style="width: 100%; height: 100%;">
                 </div>
                 <div class="description-3-food-image">
-                    <img src="./aseets//Group 658@2x.png" alt="">
+                    <img src="./aseets//Group 658@2x.png" alt="" style="width: 100%; height: 100%;">
                 </div>
             </div>
         </div>
@@ -181,7 +186,6 @@
 
         <div class="description-4-container">
             <div class="description-4-container-left">
-                <!-- <img src="./aseets/4541cc99083f618a22b772228f8a9698@2x 1.jpg" alt=""> -->
             </div>
             <div class="description-4-container-right">
                 <div class="description-4-container-right-main">
@@ -223,7 +227,6 @@
                         <div class="description-6-container-top-left-image">
                             <img src="./aseets/genussnetz logo 1.svg" alt="">
                         </div>
-                        <!-- <img src="./aseets/genussnetz logo 1.svg" alt="" style="margin-top: 127px; margin-left: 450px;"> -->
                     </div>
                     <div class="description-6-container-top-right">
                         <div class="description-6-container-top-right-container">
@@ -241,7 +244,7 @@
             </div>
 
             
-            <img src="./aseets/desc3-line.svg" alt="">
+            <img class="separator-line" src="./aseets/desc3-line.svg" alt="">
 
 
             <div class="description-6-container-middle">
@@ -285,7 +288,7 @@
             </div>
 
 
-            <img src="./aseets/desc3-line.svg" alt="">
+            <img class="separator-line" src="./aseets/desc3-line.svg" alt="">
 
 
             <div class="description-6-container-bottom">
@@ -346,18 +349,14 @@
                         <div class="description-6-large-card-navigation">
                             <div class="description-6-large-card-navigation-left">
 
-                                <div class="description-6-large-card-arrow-left">
+                                <div class="description-6-large-card-arrow-left" onclick="CardLeft()">
                                     <img class="description-6-navigation-arrows" src="./aseets/elipse-arrow-left.svg" alt="">
-                                    <!-- <img src="./aseets/card-elipse.svg" alt="">
-                                    <img src="./aseets/card-arrow-left.svg" alt=""> -->
                                 </div>
                             </div>
                             <div class="description-6-large-card-navigation-right">
 
-                                <div class="description-6-large-card-arrow-right">
+                                <div class="description-6-large-card-arrow-right" onclick="CardRight()">
                                     <img class="description-6-navigation-arrows" src="./aseets/elipse-arrow-right.svg" alt="">
-                                    <!-- <img class="description-6-large-card-elipse" src="./aseets/card-elipse.svg" alt="">
-                                    <img class="description-6-large-card-arrow-right" src="./aseets/card-arrow-right.svg" alt=""> -->
                                 </div>
                             </div>
 
@@ -392,7 +391,8 @@
                     <div class="footer-left-container">
                         <img class="vanishinmobile" src="./aseets/footericons.svg" alt="">
                         <div class="footer-left-text">
-                            Klauprechtstraße  25&#8195;&#8195;
+                            <!-- Klauprechtstraße  25&#8195;&#8195; -->
+                            Klauprechtstraße  25
                             76137 Karlsruhe, Germany
                             +49 721 358060
                             info@partyservice-brath.de
@@ -403,8 +403,10 @@
                     <img src="./aseets/Group.png" alt="">
                 </div>
                 <div class="footer-right">
-                    <div class="footer-right-text">
-                        Besuchen Sie uns auf:
+                    <div class="footer-right-text-container">
+                        <div class="footer-right-text">
+                            Besuchen Sie uns auf:
+                        </div>
                     </div>
                     <div class="footer-right-icons">
                         <img src="./aseets/twittericon.svg" alt="">
@@ -412,7 +414,6 @@
                         <img src="./aseets/instaicon.svg" alt="">
                         <img src="./aseets/yticon.svg" alt="">
                     </div>
-                    <!-- <div class="footer-right-container"></div> -->
                 </div>
             </div>
             <div class="footer-bottom">
