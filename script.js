@@ -14,7 +14,7 @@ let images2 = [
 let i = 0;
 
 setTimeout(() => {
-    changeimage()
+    // changeimage()
 }, 1000)
 
 function changeimage() {
@@ -29,7 +29,7 @@ function changeimage() {
 
     setTimeout(() => {
         changeimage()
-    }, 2000)
+    }, 10000)
 }
 
 function changed() {
@@ -66,7 +66,14 @@ function GoTo(value, element) {
 
 
 // Card Navigation \\
-let j = 0
+let carddatas = [
+    ["Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.", "Maria Kartofeln"],
+    ["Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .", "Halling Tobias"],
+    ["Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.", "Rene Weinstein"]
+
+]
+let j = 1
+
 function CardLeft() {
     if (j==0) {
         j=2;
@@ -87,8 +94,11 @@ function CardRight() {
     CardChanged()
 }
 
+
+
 function CardChanged() {
-    console.log(j)
+    document.getElementById("main-card-text").innerHTML = carddatas[j][0];
+    document.getElementById("main-card-bottom-text").innerHTML = carddatas[j][1];
 }
 
 
