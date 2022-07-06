@@ -1,0 +1,40 @@
+.whitebtn {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    width: 174px;
+    height: 47px;
+
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redbtn {
+    background: #A62120;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+
+    width: 174px;
+    height: 49px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.largebtn {
+    width: 209px;
+    margin-top: 52px;
+}
+
+/* 209 - 49 */

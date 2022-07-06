@@ -1,0 +1,124 @@
+.slider-container {
+    
+    background-size: 100%;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#slider-container {
+    background-image: url("./../../assets/image\ 14.jpg");
+}
+
+
+.slide-container-main {
+    width: 100%;
+    height: 70%;
+    display: flex;
+
+    align-items: flex-end;
+}
+
+
+.slider-container-textbox-mobile {
+    display: none;
+}
+
+.slider-container-textbox {
+    background-color: #252525;
+    width: 629px;
+    height: 348px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+}
+
+.slider-container-textbox-text-1 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    margin-left: 300px;
+    margin-top: 67px;
+    margin-bottom: 15px;
+    height: 90px;
+    width: 242px;
+}
+
+.slider-container-textbox-text-2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    width: 275px;
+    height: 134px;
+    margin-left: 298px;
+    margin-bottom: 42px;
+}
+
+
+.slider-content-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.navigation-container {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider-container-navigation-elipse {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 17px;
+    height: 17px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+
+
+.navigation-active {
+    padding: 5px;
+    background: #A62120;
+}
+
+
+@media only screen and (max-width: 1550px) {
+    .slider-container {
+        height: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .slider-container {
+        height: 250px;
+    }
+    .slider-container-textbox {
+        display: none;
+    }
+    .slider-container-textbox-main {
+        width: 80%;
+    }
+    .slider-content-navigation {
+        display: none;
+    }
+    .slider-container-textbox-mobile {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px !important;
+    }
+}
